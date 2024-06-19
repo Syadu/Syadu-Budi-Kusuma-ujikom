@@ -745,6 +745,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2334068094556377089}
   - component: {fileID: 4002028980080418776}
+  - component: {fileID: 1636324155186122162}
   m_Layer: 0
   m_Name: Deer
   m_TagString: Deer
@@ -760,7 +761,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4150329715729593699}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 7.605751, y: 0, z: -14.872143}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 1
@@ -768,7 +769,7 @@ Transform:
   - {fileID: 3330307376011548456}
   - {fileID: 3204974300584367293}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &4002028980080418776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -781,6 +782,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fdc1ae4147e1b344877f7b73c795524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!64 &1636324155186122162
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4150329715729593699}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &4281326186426596739
 GameObject:
   m_ObjectHideFlags: 0

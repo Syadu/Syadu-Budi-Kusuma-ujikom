@@ -42,14 +42,27 @@ public class Enemy : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.collider.CompareTag("Wall"))
-        {
-            Destroy(gameObject);
-        }
+          if (other.collider.CompareTag("Wall"))
+          {
+              Destroy(gameObject);
+          }
 
-        if (other.collider.CompareTag("Bullet"))
-        {
-            enemyHealth -= 25;
-        }
+          if (other.collider.CompareTag("Bullet"))
+          {
+              enemyHealth -= 25;
+          }
     }
+
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.CompareTag("Wall"))
+    //    {
+    //        Destroy(gameObject);
+    //    }
+
+    //   if (other.CompareTag("Bullet"))
+    //    {
+    //        enemyHealth -= 25;
+    //    }
+    //}
 }

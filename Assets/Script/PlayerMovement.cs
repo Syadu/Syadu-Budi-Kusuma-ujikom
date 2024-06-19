@@ -33,11 +33,13 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.A))
         {
-            
+            animator.SetBool("Left", true);
+            animator.SetBool("Right", false);
         }
         if (Input.GetKeyDown(KeyCode.D))
         {
-
+            animator.SetBool("Right", true);
+            animator.SetBool("Left", false);
         }
     }
 
@@ -47,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
         {
             var bullet = Instantiate(bulletPrefab, shootPoint.position, shootPoint.rotation);
             bullet.GetComponent<Rigidbody>().velocity = shootPoint.forward * shootSpeed;
+
         }
     }
 }
