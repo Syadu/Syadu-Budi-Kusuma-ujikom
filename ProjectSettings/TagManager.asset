@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Deer
+  - Cow
+  - Dog
+  - Horse
+  - Bullet
+  - Wall
   layers:
   - Default
   - TransparentFX
